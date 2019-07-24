@@ -192,7 +192,7 @@ public class Sticky_Notes extends javax.swing.JFrame {
 
     private void view_notesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_view_notesActionPerformed
         // TODO add your handling code here:
-        this.dispose();
+        this.dispose();// dispose the frame 
         view_Notes View =new view_Notes();
         View.setVisible(true);
     }//GEN-LAST:event_view_notesActionPerformed
