@@ -182,7 +182,9 @@ public class Add_new_user extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null,
         " File alrady Exist " + "" + ".",
         null, JOptionPane.INFORMATION_MESSAGE);
-            
+                firstName1.setText("");
+                lastName1.setText("");
+                Done.setText("");
         } catch (IOException ex) {
             Logger.getLogger(Add_new_user.class.getName()).log(Level.SEVERE, null, ex);
         }
