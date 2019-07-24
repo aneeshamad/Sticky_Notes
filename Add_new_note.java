@@ -278,6 +278,7 @@ public class Add_new_note extends javax.swing.JFrame {
 
     private void add_noteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_noteActionPerformed
         // TODO add your handling code here:
+        Date date=new java.util.Date(); 
          String first_name = new String();
         String last_name =new String ();
         first_name = firstName2.getText();
@@ -287,7 +288,9 @@ public class Add_new_note extends javax.swing.JFrame {
         String note=new String();
         note = New_note.getText();
         try{
+      
         File target=new File("//Users//aneeshamad//NetBeansProjects//Sticky_Note//".concat(fullname).concat(".txt"));
+        usingBufferedWritter(date.toString(),target);
         usingBufferedWritter(note,target);
         
       
@@ -297,6 +300,7 @@ public class Add_new_note extends javax.swing.JFrame {
             Logger.getLogger(Add_new_note.class.getName()).log(Level.SEVERE, null, ex);
             
         }
+        System.out.println(date);
     }//GEN-LAST:event_add_noteActionPerformed
 
     /**
