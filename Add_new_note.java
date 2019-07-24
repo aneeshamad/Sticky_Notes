@@ -263,7 +263,7 @@ public class Add_new_note extends javax.swing.JFrame {
             }
             
          }
-         if(!found) {
+         if(!found) {   // if the user not found ;
               System.out.println("not found ");
            JOptionPane.showMessageDialog(null,
         " File not Exist " + "" + ".",
