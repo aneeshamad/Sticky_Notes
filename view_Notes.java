@@ -237,7 +237,7 @@ public class view_Notes extends javax.swing.JFrame {
     
          try {
                     //New_note.append(read(target));
-                     Notes.setText(" your notes are  "+" \n "+"\n"+readFileAsString(fullname.concat(".txt")));
+                     Notes.setText(" your notes are  "+"\n"+readFileAsString(fullname.concat(".txt")));
                 } catch (Exception ex) {
                     Logger.getLogger(view_Notes.class.getName()).log(Level.SEVERE, null, ex);
                 }

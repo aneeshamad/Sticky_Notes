@@ -172,13 +172,17 @@ public class Add_new_user extends javax.swing.JFrame {
         File file = new File(fullname+".txt");
         try {
             if(file.createNewFile() ){
+                 Done.setText("User added");
                 JOptionPane.showMessageDialog(null,
         "  File created " + "" + ".",
         "",JOptionPane.INFORMATION_MESSAGE);
+              
             } else 
+                Done.setText("User alrady added ");
                 JOptionPane.showMessageDialog(null,
         " File alrady Exist " + "" + ".",
         null, JOptionPane.INFORMATION_MESSAGE);
+            
         } catch (IOException ex) {
             Logger.getLogger(Add_new_user.class.getName()).log(Level.SEVERE, null, ex);
         }
